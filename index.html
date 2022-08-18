@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container header-centering">
+        <div class="container">
             <div class="row">
                 <div class="col-md-3">
                     <div class="header__logo">
@@ -46,16 +46,15 @@
                 </div>
                 <div class="col-md-3">
                     <div class="row five-px-backdown">
-                        <div class="col-md-9">
+                        <div class="col-md-9 reset">
                             <form class="form-search">
                                 <input type="text" placeholder="search">
                                 <button></button>
                             </form>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-3 ">
                             <div class="basket">
                                 <div class="product__count">4</div>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -63,7 +62,42 @@
             </div>
         </div>
     </header>
-    <main class="main">main</main>
+    <main class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">col 3</div>
+                <div class="col-md-9">
+                    <nav>
+                        <ul class="main__nav">
+                            <li>
+                                <a href="#">Home page</a>
+                                <a href="#">Products</a>
+                                <a href="#">Laptops and Tablets</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="laptops-and-tablets">
+                                <h1>Laptops and Tables</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <form class="sorting">
+                                <select name="" id="">
+                                    <option value="1">sort by price</option>
+                                    <option value="2">sort by name</option>
+                                    <option value="3">sort by date</option>
+                                    <option value="4">sort by popularity</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer">footer</footer>
 </body>
 </html>
