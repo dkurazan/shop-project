@@ -14,7 +14,11 @@ body{
 .container{
     width: 1200px;
     margin: 0 auto;
-    padding: 25px 15px;
+    padding: 0 15px;
+}
+
+.header-centering{
+    padding: 25px 0;
 }
 
 .row{
@@ -125,6 +129,8 @@ body{
 }
 
 .header__menu > li:hover > .arrow-down{
+    color: white;
+    background-color: #2c71b8;  
     background-image: url(img/arrow-down-white.png);
     background-repeat: no-repeat;
     background-size: 15px 15px;
