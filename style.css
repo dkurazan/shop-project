@@ -110,6 +110,7 @@ body{
     left: -1px;
     visibility: hidden;
     opacity: 0;
+    z-index: 2;
 }
 
 .dropdown a{
@@ -221,3 +222,302 @@ body{
 
 /* main */
 
+.main{
+    border-top: 1px solid white;
+}
+
+
+
+.main__nav{
+    padding: 30px 0 23px 15px;
+}
+
+.main__nav>li{
+    float: left;
+}
+
+.main__nav>li>a{
+    text-decoration: none;
+    font-family: "Roboto";
+    color: rgba(255, 255, 255, 0.502);
+    font-size: 14px;
+    font-weight: 300;
+    display: block;
+    padding-right: 7px;
+}
+
+.main__nav>li>a::after{
+    content: ">";
+    padding-left: 7px;
+}
+
+.main__nav>li:last-child>a{
+    text-decoration: underline;   
+}
+
+.main__nav>li:last-child>a:after{
+    content: "";
+}
+
+.main__nav::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.laptops-and-tablets h1{
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.sorting{
+    padding-right: 15px;
+}
+
+.sorting select{
+    background-color: #2c71b2;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 300;
+    border: 1px solid white;
+    width: 100%;
+    padding: 10px 0 10px 5px;
+}
+
+.sorting select:focus{
+    outline: none;
+}
+
+.sorting>select>option{
+    display: block;
+    padding: 10px 0 10px 5px;
+}
+
+.sorting>select>option:hover{
+    background-color: #fff;
+    color: #2c71b2;
+}
+
+
+/* products cards */
+.sixty-px-backdown{
+    padding-top: 60px;
+}
+
+.device-card{
+    border: 1px solid rgb(255, 255, 255, 0.75);
+    width: 100%;
+    
+}
+
+.device-img{
+    background-color: rgb(255, 255, 255, 0.75);
+    height: 180px;
+    width: 100%;    
+    position: relative;
+}
+
+.device-img img{
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.device-img__icons{
+    position: absolute;
+    padding: 10px;
+    right: 0;
+}
+
+.zoom-icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b2;
+    background-image: url(img/blue-zoom.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.zoom-icon:hover{
+    background-color: #2c71b2;
+    background-image: url(img/white-zoom.png);
+    cursor: pointer;
+}
+
+.like-icon{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b2;
+    background-image: url(img/blue-like.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.like-icon:hover{
+    background-color: #2c71b2;
+    background-image: url(img/white-like.png);
+    cursor: pointer;
+}
+
+.device-description{
+    padding-left: 15px;
+}
+
+.device-description, .device-price, .more-details-btn, .add-to-cart-btn{
+    background-color: rgb(44, 113, 178, 0.75);
+}
+
+.device-description h2{
+    padding: 15px 0 20px 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    
+      
+}
+
+.device-description p{
+    font-size: 21px;
+    color: #e4edf6;
+    font-weight: 300;
+}
+
+.device-description h3{
+    padding-top: 20px;
+    font-size: 21px;
+    font-weight: 300;
+    color: #f3f7fb;
+}
+
+.device-description>h3>span{
+    font-weight: bold;
+}
+
+.device-price{
+    padding: 35px 0 30px 0;
+    text-align: center;
+}
+
+.device-price__inner{
+    margin: 0 auto;
+    display: inline-block;
+    
+}
+
+.device-price__inner::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.device-price__big{
+    font-weight: bold;
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    padding-right: 10px;
+}
+
+.device-price__small{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    float: left;
+}
+
+.more-details-btn a{
+    display: block;
+    width: 210px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: #2c71b2;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.more-details-btn{
+    padding-bottom: 15px;
+}
+
+.more-details-btn a:hover{
+    background-color: white;
+    color: #2c71b2;
+
+}
+
+.add-to-cart-btn a{
+    display: block;
+    width: 210px;
+    height: 50px;
+    background-color: #568dc6;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-image: url(img/basket_white.png);
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+}
+
+.add-to-cart-btn{
+    padding-bottom: 30px;
+
+}
+
+.add-to-cart-btn a:hover{
+    background-color: #fff;
+    color: #2c71b2;
+    background-image: url(img/basket_blue.png);
+}
+
+
+/* other rows of cards */
+
+.thirty-px-backdown{
+    padding-top: 30px;
+}
+
+/* load more button */
+
+.load-more{
+    padding: 40px 0 90px 0;
+    text-align: center;
+}
+
+.load-more a{
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+/* footer */
+
+.footer{
+    background-color: rgb(255, 255, 255, 0.75);
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #2c71b2;
+    font-size: 21px;
+    font-weight: 300;
+}
