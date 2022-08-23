@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="header__logo">
-                        <a href="#">
+                        <a href="index.html">
                             <img src="img/logo.png" alt="">
                         </a>
                     </div>
@@ -29,15 +29,15 @@
                             <li><a href="#">Home</a></li>
                             <li>
                                 <a href="#" class="arrow-down">Products</a>
-                                <div class="dropdown">
-                                    <a href="#">Lorem ipsum dolor</a>
-                                    <a href="#">Sit amet</a>
-                                    <a href="#">Consectetur adipisicing</a>
-                                    <a href="#">Tempor incididunt</a>
-                                    <a href="#">Dolore magna aliqua</a>
-                                    <a href="#">Ut enim ad minim veniam</a>
-                                    <a href="#">Quis nostrud</a>
-                                </div>
+                                <ul class="dropdown">
+                                    <li><a href="#">Lorem ipsum dolor</a></li>
+                                    <li><a href="#">Sit amet</a></li>
+                                    <li><a href="#">Consectetur adipisicing</a></li>
+                                    <li><a href="#">Tempor incididunt</a></li>
+                                    <li><a href="#">Dolore magna aliqua</a></li>
+                                    <li><a href="#">Ut enim ad minim veniam</a></li>
+                                    <li><a href="#">Quis nostrud</a></li>
+                                </ul>
                             </li>
                             <li><a href="#">Payment</a></li>
                             <li><a href="#">Shipping</a></li>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="row five-px-backdown">
-                        <div class="col-md-9 reset">
+                        <div class="col-md-9">
                             <form class="form-search">
                                 <input type="text" placeholder="search">
                                 <button></button>
@@ -62,33 +62,34 @@
             </div>
         </div>
     </header>
+
     <main class="main">
         <div class="container">
             <div class="row">
                 <div class="col-md-3">col 3</div>
                 <div class="col-md-9">
-                    <div class="row">
-                        <nav>
-                            <ul class="main__nav">
-                                <li>
-                                    <a href="#">Home page</a>
-                                </li>
-                                <li>
-                                    <a href="#">Products</a>
-                                </li>
-                                <li>
-                                    <a href="#">Laptops and Tablets</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="laptops-and-tablets">
-                                    <h1>Laptops and Tablets</h1>
-                                </div>
+                    <nav>
+                        <ul class="breadcrumbs">
+                            <li>
+                                <a href="#">Home page</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Laptops and Tablets</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="title">
+                        <div class="col-md-8">
+                            <div class="laptops-and-tablets">
+                                <h1>Laptops and Tablets</h1>
                             </div>
-                            <div class="col-md-4">
-                                <form class="sorting">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="sorting">
+                                <form >
                                     <select name="" id="">
                                         <option value="1">sort by price</option>
                                         <option value="2">sort by name</option>
@@ -98,12 +99,12 @@
                                 </form>
                             </div>
                         </div>
-
+                    </div> 
+                    <div class="col-md-12 cancel-float">
                         <!-- first row of cards -->
-                        
-                        <div class="col-md-12">
-                            <div class="row sixty-px-backdown">
-                                <div class="col-md-4">
+                        <div class="row sixty-px-backdown">
+                            <div class="col-md-4 ">
+                                <div class="negative-left-margin">
                                     <div class="device-card">
                                         <div class="device-img">
                                             <img src="img/desktop.png" alt="">
@@ -133,37 +134,39 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="device-card">
-                                        <div class="device-img">
-                                            <img src="img/remote.png" alt="">
-                                            <div class="device-img__icons">
-                                                <div class="zoom-icon"></div>
-                                                <div class="like-icon"></div>
-                                            </div>
-                                        </div>
-                                        <div class="device-description">
-                                            <h2>#2 Device Name</h2>
-                                            <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
-                                            <h3><span> Type:</span> Laptop</h3>
-                                            <h3><span>Screen size:</span> 7 inches</h3>
-                                            <h3><span>Ram:</span> 1GB</h3>
-                                        </div>
-                                        <div class="device-price">
-                                            <div class="device-price__inner">
-                                                <div class="device-price__big">$1250</div>
-                                                <div class="device-price__small">99</div>
-                                            </div>
-                                        </div>
-                                        <div class="more-details-btn">
-                                            <a href="#">More details</a>
-                                        </div>
-                                        <div class="add-to-cart-btn">
-                                            <a href="#">Add to cart</a>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device-card">
+                                    <div class="device-img">
+                                        <img src="img/remote.png" alt="">
+                                        <div class="device-img__icons">
+                                            <div class="zoom-icon"></div>
+                                            <div class="like-icon"></div>
                                         </div>
                                     </div>
+                                    <div class="device-description">
+                                        <h2>#2 Device Name</h2>
+                                        <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
+                                        <h3><span> Type:</span> Laptop</h3>
+                                        <h3><span>Screen size:</span> 7 inches</h3>
+                                        <h3><span>Ram:</span> 1GB</h3>
+                                    </div>
+                                    <div class="device-price">
+                                        <div class="device-price__inner">
+                                            <div class="device-price__big">$1250</div>
+                                            <div class="device-price__small">99</div>
+                                        </div>
+                                    </div>
+                                    <div class="more-details-btn">
+                                        <a href="#">More details</a>
+                                    </div>
+                                    <div class="add-to-cart-btn">
+                                        <a href="#">Add to cart</a>
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="negative-right-margin">
                                     <div class="device-card">
                                         <div class="device-img">
                                             <img src="img/watch.png" alt="">
@@ -193,15 +196,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
+                            
                         </div>
-                        
                         <!-- second row of cards -->
-                        
-                        <div class="col-md-12">
-                            <div class="row thirty-px-backdown">
-                                <div class="col-md-4">
+                        <div class="row thirty-px-backdown">
+                            <div class="col-md-4">
+                                <div class="negative-left-margin">
                                     <div class="device-card">
                                         <div class="device-img">
                                             <img src="img/laptop.png" alt="">
@@ -231,37 +232,39 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="device-card">
-                                        <div class="device-img">
-                                            <img src="img/iPod.png" alt="">
-                                            <div class="device-img__icons">
-                                                <div class="zoom-icon"></div>
-                                                <div class="like-icon"></div>
-                                            </div>
-                                        </div>
-                                        <div class="device-description">
-                                            <h2>#2 Device Name</h2>
-                                            <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
-                                            <h3><span> Type:</span> Laptop</h3>
-                                            <h3><span>Screen size:</span> 7 inches</h3>
-                                            <h3><span>Ram:</span> 1GB</h3>
-                                        </div>
-                                        <div class="device-price">
-                                            <div class="device-price__inner">
-                                                <div class="device-price__big">$1250</div>
-                                                <div class="device-price__small">99</div>
-                                            </div>
-                                        </div>
-                                        <div class="more-details-btn">
-                                            <a href="#">More details</a>
-                                        </div>
-                                        <div class="add-to-cart-btn">
-                                            <a href="#">Add to cart</a>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device-card">
+                                    <div class="device-img">
+                                        <img src="img/iPod.png" alt="">
+                                        <div class="device-img__icons">
+                                            <div class="zoom-icon"></div>
+                                            <div class="like-icon"></div>
                                         </div>
                                     </div>
+                                    <div class="device-description">
+                                        <h2>#2 Device Name</h2>
+                                        <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
+                                        <h3><span> Type:</span> Laptop</h3>
+                                        <h3><span>Screen size:</span> 7 inches</h3>
+                                        <h3><span>Ram:</span> 1GB</h3>
+                                    </div>
+                                    <div class="device-price">
+                                        <div class="device-price__inner">
+                                            <div class="device-price__big">$1250</div>
+                                            <div class="device-price__small">99</div>
+                                        </div>
+                                    </div>
+                                    <div class="more-details-btn">
+                                        <a href="#">More details</a>
+                                    </div>
+                                    <div class="add-to-cart-btn">
+                                        <a href="#">Add to cart</a>
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="negative-right-margin">
                                     <div class="device-card">
                                         <div class="device-img">
                                             <img src="img/phone.png" alt="">
@@ -291,15 +294,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
+                            
                         </div>
-                        
                         <!-- third row of cards -->
-                        
-                        <div class="col-md-12">
-                            <div class="row thirty-px-backdown">
-                                <div class="col-md-4">
+                        <div class="row thirty-px-backdown">
+                            <div class="col-md-4">
+                                <div class="negative-left-margin">
                                     <div class="device-card">
                                         <div class="device-img">
                                             <img src="img/tablet.png" alt="">
@@ -329,37 +330,39 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="device-card">
-                                        <div class="device-img">
-                                            <img src="img/remote.png" alt="">
-                                            <div class="device-img__icons">
-                                                <div class="zoom-icon"></div>
-                                                <div class="like-icon"></div>
-                                            </div>
-                                        </div>
-                                        <div class="device-description">
-                                            <h2>#2 Device Name</h2>
-                                            <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
-                                            <h3><span> Type:</span> Laptop</h3>
-                                            <h3><span>Screen size:</span> 7 inches</h3>
-                                            <h3><span>Ram:</span> 1GB</h3>
-                                        </div>
-                                        <div class="device-price">
-                                            <div class="device-price__inner">
-                                                <div class="device-price__big">$1250</div>
-                                                <div class="device-price__small">99</div>
-                                            </div>
-                                        </div>
-                                        <div class="more-details-btn">
-                                            <a href="#">More details</a>
-                                        </div>
-                                        <div class="add-to-cart-btn">
-                                            <a href="#">Add to cart</a>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="device-card">
+                                    <div class="device-img">
+                                        <img src="img/remote.png" alt="">
+                                        <div class="device-img__icons">
+                                            <div class="zoom-icon"></div>
+                                            <div class="like-icon"></div>
                                         </div>
                                     </div>
+                                    <div class="device-description">
+                                        <h2>#2 Device Name</h2>
+                                        <p>Lorem ipsum dolor sit <br> amet, consectetur <br> adipisicing elit.</p>
+                                        <h3><span> Type:</span> Laptop</h3>
+                                        <h3><span>Screen size:</span> 7 inches</h3>
+                                        <h3><span>Ram:</span> 1GB</h3>
+                                    </div>
+                                    <div class="device-price">
+                                        <div class="device-price__inner">
+                                            <div class="device-price__big">$1250</div>
+                                            <div class="device-price__small">99</div>
+                                        </div>
+                                    </div>
+                                    <div class="more-details-btn">
+                                        <a href="#">More details</a>
+                                    </div>
+                                    <div class="add-to-cart-btn">
+                                        <a href="#">Add to cart</a>
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="negative-right-margin">
                                     <div class="device-card">
                                         <div class="device-img">
                                             <img src="img/watch.png" alt="">
@@ -389,8 +392,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                
                             </div>
+                            
                         </div>
                     </div>
                     <div class="load-more">
