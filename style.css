@@ -221,6 +221,108 @@ body{
     margin-right: -10px;
 }
 
+
+/* slider */
+
+.slider-block > div{
+    padding: 160px 0;
+    font-size: 100px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.slick-dots{
+    padding-bottom: 20px;
+}
+
+.slick-dots li button::before{
+    content: '';
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li button {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.slick-active button{
+    background-color: #fff !important;
+}
+
+.slick-next:before{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+
+.slick-prev{
+    width: 40px;
+    left: 0;
+    z-index: 40;
+}
+
+.slick-prev:before{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -9px;
+    opacity: 1;
+}
+
+.slick-prev::after{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+    margin-bottom: 10px;
+    position: absolute;
+    top: 15px;
+}
+
+.slick-next{
+    width: 40px;
+    right: 0;
+}
+
+.slick-next:before{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -9px;
+    opacity: 1;
+}
+
+.slick-next::after{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: white;
+    transform: rotate(-45deg);
+    margin-bottom: 10px;
+    position: absolute;
+    top: 15px;
+}
+
 /* main */
 
 .main{
@@ -461,7 +563,7 @@ input[type="checkbox"]:checked + label::before{
     padding-left: 15px;
 }
 
-.device-description, .device-price, .more-details-btn, .add-to-cart-btn{
+.device-description, .product-quantity, .device-price, .more-details-btn, .add-to-cart-btn{
     background-color: rgb(44, 113, 178, 0.75);
 }
 
@@ -522,6 +624,46 @@ input[type="checkbox"]:checked + label::before{
     color: #fff;
     text-align: center;
     float: left;
+}
+
+.product-quantity{
+    width: 100%;
+}
+
+.product-quantity__inner{
+    margin: 0 auto;
+    width: 208px;
+    padding-bottom: 15px;
+}
+
+.product-quantity__inner button{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    background-color: rgb(255, 255, 255, 0.2);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.product-quantity__inner button:hover{
+    background-color: white;;
+    cursor: pointer;
+    color: #2c71b2;
+}
+
+.product-quantity__inner input{
+    width: 150px;
+    height: 25px;
+    color: white;
+    background-color: rgb(255, 255, 255, 0.2);
+    border: 1px solid white
+}
+
+
+.product-quantity__inner input:focus{
+    outline: none;
 }
 
 .more-details-btn a{
